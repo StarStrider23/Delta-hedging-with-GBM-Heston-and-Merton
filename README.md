@@ -1,1 +1,2 @@
-# Delta-hedging-with-GBM-Heston-and-Merton
+# Delta hedging with GBM, Heston and Merton
+
