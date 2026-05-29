@@ -52,14 +52,21 @@ $$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
 
 ## Hedging Frequency 
 
+## Parameter Sensitivity of the Merton Model
+
+### Jump intensity ($\lambda$)
+
+### Jump size and direction ($\mu_J$)
+
+### Jump volatiltiy/uncertainty ($\nu_J$)
+
 ## Parameter Sensitivity of the Heston Model
 
 ### Vol-of-vol ($\xi$)
 
-### Correlaton 
+### Correlaton ($\rho$)
 
-### Rate of Reversion 
+### Rate of Reversion ($\kappa$)
 
-## Parameter Sensitivity of the Merton Model
 
 # Discussion
