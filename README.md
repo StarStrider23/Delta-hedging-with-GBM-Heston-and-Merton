@@ -10,7 +10,7 @@ Project by Alexsey Chernichenko. May 2026.
 
 ## Geometric Brownian Motion
 
-$$ dS_t = mu S_t dt + \sigma S_t dW_t $$
+$$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
 
 $$ S_t = S_0 \exp \bigg( (\mu - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
