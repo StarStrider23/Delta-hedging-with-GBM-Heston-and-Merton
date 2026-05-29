@@ -32,9 +32,9 @@ $$ W_t^S W_t^\nu = \rho dt $$
 
 $$ 2\kappa \theta > \xi^2 $$
 
-$$ S_{t + dt} = S_t * \exp \bigg( (r - 0.5 \nu_t) dt + \sqrt(v_t dt) Z_S) $$
+$$ S_{t + dt} = S_t * \exp \bigg( (r - 0.5 \nu_t) dt + \sqrt{v_t dt} Z_S) $$
 
-$$ \nu_{t + dt} = v_t + \kappa * (theta - \nu_t) * dt + \xi * \sqrt(\nu_t dt) * Z_\nu $$
+$$ \nu_{t + dt} = v_t + \kappa * (\theta - \nu_t) dt + \xi * \sqrt{\nu_t dt} * Z_\nu $$
 
 $$ Z_S = Z_1 $$
 
