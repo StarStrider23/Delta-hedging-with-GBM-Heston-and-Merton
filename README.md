@@ -10,6 +10,12 @@ Project by Alexsey Chernichenko. May 2026.
 
 ## Geometric Brownian Motion
 
+$$ dS_t = mu S_t dt + \sigma S_t dW_t $$
+
+$$ S_t = S_0 \exp \bigg( (\mu - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
+
+$$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
+
 ## Merton Model
 
 $$ dS_t = (r - \lambda k) S_t dt + \sigma S_t dW_t + S_t (J - 1) dN_t $$
@@ -32,12 +38,28 @@ $$ \nu_{t + dt} = v_t + \kappa * (theta - \nu_t) * dt + \xi * \sqrt(\nu_t dt) * 
 
 $$ Z_S = Z_1 $$
 
-$$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} * Z_2 $$
+$$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
 
 # Methodolgy 
 
 # Structure
 
 # Results
+
+## Rolling Mean
+
+## VaR, ES, skewness and kurtosis
+
+## Hedging Frequency 
+
+## Parameter Sensitivity of the Heston Model
+
+### Vol-of-vol ($ \xi $)
+
+### Correlaton 
+
+### Rate of Reversion 
+
+## Parameter Sensitivity of the Merton Model
 
 # Discussion
