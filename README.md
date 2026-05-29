@@ -54,7 +54,7 @@ $$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
 
 ## Parameter Sensitivity of the Heston Model
 
-### Vol-of-vol ($$ \xi $$)
+### Vol-of-vol (\xi)
 
 ### Correlaton 
 
