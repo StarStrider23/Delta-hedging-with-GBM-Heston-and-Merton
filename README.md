@@ -124,7 +124,7 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 ## PnL mean, PnL std, skewness, kurtosis, VaR and ES
 
-<img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/d4a5eb95-dca0-47a3-8c81-313070582fd7" />
+<img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/ce501363-5d34-44c6-81a0-6ad966287a04" />
 
 |          |   GBM   |   Merton   |   Heston   |
 | -------- | ------- | ---------- | ---------- |
