@@ -145,17 +145,40 @@ Number of steps are 10, 25, 50, 100, 252, 500.
 
 ### Jump intensity ($\lambda$)
 
+<img width="1200" height="600" alt="Figure_11" src="https://github.com/user-attachments/assets/6e037284-00c5-417d-b56b-dc1a5e593b1d" />
+
+<img width="1200" height="600" alt="Figure_12" src="https://github.com/user-attachments/assets/f20e31c3-faed-465a-ab63-1ea46e2f5e9e" />
+
 ### Jump size and direction ($\mu_J$)
 
+<img width="1440" height="800" alt="Figure_13" src="https://github.com/user-attachments/assets/60e52db3-0098-4a3c-ac0b-dd2c80f262f4" />
+
+<img width="1200" height="600" alt="Figure_14" src="https://github.com/user-attachments/assets/519b3e4a-563f-4841-a46a-bb05d150ac7e" />
+
 ### Jump volatiltiy/uncertainty ($\nu_J$)
+
+<img width="1440" height="800" alt="Figure_15" src="https://github.com/user-attachments/assets/bece0437-dd13-4589-8876-a7bfb1fefd3b" />
+
+<img width="1200" height="600" alt="Figure_16" src="https://github.com/user-attachments/assets/7f21c5af-ed7c-466f-ac87-b373296f6e27" />
 
 ## Parameter Sensitivity of the Heston Model
 
 ### Vol-of-vol ($\xi$)
 
+<img width="1200" height="600" alt="Figure_5" src="https://github.com/user-attachments/assets/f54fa2f8-b9a3-4117-8479-36f0b317d170" />
+
+<img width="1200" height="600" alt="Figure_6" src="https://github.com/user-attachments/assets/458af505-283e-44e4-9e7e-a16d0423f644" />
+
 ### Correlaton ($\rho$)
+
+<img width="1200" height="600" alt="Figure_8" src="https://github.com/user-attachments/assets/71047ed7-146a-4eee-b8bd-b9399fd6e6ae" />
+
+<img width="1440" height="800" alt="Figure_7" src="https://github.com/user-attachments/assets/ffb040d5-6356-4dba-b86c-635613d9abb8" />
 
 ### Rate of Reversion ($\kappa$)
 
+<img width="1200" height="600" alt="Figure_9" src="https://github.com/user-attachments/assets/8107f20e-0b89-4024-8a0c-06cf7a3d0810" />
+
+<img width="1200" height="600" alt="Figure_10" src="https://github.com/user-attachments/assets/b7eafcfe-bcd9-4533-877a-886b57800dbc" />
 
 # Discussion
