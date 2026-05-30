@@ -118,7 +118,11 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 ## Rolling Mean
 
+Under the GBM model, the rolling mean PnL remains close to zero signaling effective hedging when the model assumptions are satisfied. The Heston model exhibits a gradually increasing positive mean PnL while the Merton model shows a rapidly decreasing negative mean PnL. This demonstrates the growing impact of stochastic volatility and jump risk on hedging performance.
+
 <img width="1200" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/c4148df2-1bc8-4a8c-ba74-d4ce94e2b299" />
+
+A closer look at the GBM's performance.
 
 <img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/3c3fd008-67b0-42e4-9d57-8d0b87f11d4a" />
 
@@ -135,11 +139,15 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 | VaR99    | -1.16   |   -9.38    |   -5.03    |
 | ES99     | -1.47   |   -11.77   |   -6.25    |
 
+The GBM model yields the narrowest PnL distribution, (almost) the lowest parameters and risk measures. Introducing stochastic volatility through the Heston model greatly increases almost every parameter and risk measure. The Merton model continues this trend and produces the most downside risk with strongly negative skewness, higher kurtosis and substantially worse VaR and Expected Shortfall values due to hedging losses induced by jumps.
+
 ## Hedging Frequency 
 
 Number of steps used are 10, 25, 50, 100, 252 and 500.
 
 <img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
+
+For every model, hedging error decreases as the rebalancing frequency increases. However, the error approaches zero in the limit of continuous hedging only for GBM while it approaches different, non-zero limits for the Heston and Merton models. Jumps seem to affect hedging degree to a bigger extent compared to stochastic volatility. 
 
 ## Parameter Sensitivity of the Merton Model
 
@@ -150,6 +158,8 @@ Number of expected jumps per year used are 0.5, 1, 1.5, 2.5 and 4.
 <img width="1200" height="600" alt="Figure_11" src="https://github.com/user-attachments/assets/6e037284-00c5-417d-b56b-dc1a5e593b1d" />
 
 <img width="1200" height="600" alt="Figure_12" src="https://github.com/user-attachments/assets/f20e31c3-faed-465a-ab63-1ea46e2f5e9e" />
+
+Number of expected jumps per year expectedly lead to a higher standard deviation and risk measures become even more largely negative.
 
 ### Jump size/direction ($\mu_J$)
 
