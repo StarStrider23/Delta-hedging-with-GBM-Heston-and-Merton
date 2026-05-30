@@ -108,7 +108,7 @@ Note: for direct comparison with GBM, it's assumed that both Merton and Heston m
 
 Asset price paths were simulated using Monte Carlo methods under three different models: GBM, the Heston and the Merton models. For each model, a discrete-time delta hedging strategy was implemented using Black–Scholes deltas and rebalanced at predetermined intervals.
 
-Hedging performance was evaluated by analyzing the resulting PnL distributions, including measures such as rolling mean PnL, standard deviation, VaR ES. The impact of hedging frequency on replication accuracy was investigated and parameter sensitivity analyses were performed to assess how key model parameters influence hedging risk and performance.
+Hedging performance was evaluated by analyzing the resulting PnL distributions, including measures such as rolling mean PnL, standard deviation, VaR and ES, both at the 99th percentile. The impact of hedging frequency on replication accuracy was investigated and parameter sensitivity analyses were performed to assess how key model parameters influence hedging risk and performance.
 
 The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 0.035, $\sigma$ = 0.2, $T$ = 1, number of steps = 252 and number of simulations = 10000. For the Merton model: $\lambda$ = 1, $mu_J$ = - 0.05 and $\sigma_J$ = 0.1. Finally, for the Heston model: $\nu_0$ = 0.04, $\rho$ = -0.7, $xi$ = 0.3, $\theta$ = 0.04 and $\kappa$ = 1.5. 
 
