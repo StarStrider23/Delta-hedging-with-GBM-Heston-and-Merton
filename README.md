@@ -126,12 +126,6 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 <img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/d4a5eb95-dca0-47a3-8c81-313070582fd7" />
 
-## Hedging Frequency 
-
-Number of steps are (10, 25, 50, 100, 252, 500)
-
-<img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
-
 |          |   GBM   |   Merton   |   Heston   |
 | -------- | ------- | ---------- | ---------- |
 | PnL mean | 0.0015  |   -1.07    |   0.16     |
@@ -140,6 +134,12 @@ Number of steps are (10, 25, 50, 100, 252, 500)
 | Kurtosis | 1.62    |   12.69    |    1.56    |
 | VaR99    | -1.16   |   -9.38    |   -5.03    |
 | ES99     | -1.47   |   -11.77   |   -6.25    |
+
+## Hedging Frequency 
+
+Number of steps are (10, 25, 50, 100, 252, 500)
+
+<img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
 
 ## Parameter Sensitivity of the Merton Model
 
