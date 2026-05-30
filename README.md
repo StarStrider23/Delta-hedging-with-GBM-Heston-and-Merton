@@ -179,11 +179,11 @@ Vol-of-vol used are 0.1, 0.2, 0.3, 0.4 and 0.5.
 
 ### Correlaton ($\rho$)
 
-Correlations used are 0.5, 0.1, -0.4, -0.7, -0.9 and -0.99.
+Correlations used are 0.9, 0.6, 0.3, -0.3, -0.6 and -0.9.
 
-<img width="1440" height="800" alt="Figure_17" src="https://github.com/user-attachments/assets/ce84d0ba-fb56-44fd-9fc8-24cf68fbee95" />
+<img width="1440" height="800" alt="Figure_20" src="https://github.com/user-attachments/assets/f61bd25a-cbcf-4f3d-bec5-86c6aa34189f" />
 
-<img width="1200" height="600" alt="Figure_8" src="https://github.com/user-attachments/assets/71047ed7-146a-4eee-b8bd-b9399fd6e6ae" />
+<img width="1200" height="600" alt="Figure_21" src="https://github.com/user-attachments/assets/233575d3-c9d8-48a2-a91c-8d86b21261fe" />
 
 ### Rate of Reversion ($\kappa$)
 
