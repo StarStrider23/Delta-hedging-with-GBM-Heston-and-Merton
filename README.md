@@ -179,7 +179,7 @@ Jump volatilities/uncertainties used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
 
 <img width="1200" height="600" alt="Figure_16" src="https://github.com/user-attachments/assets/7f21c5af-ed7c-466f-ac87-b373296f6e27" />
 
-Larger jump volatility/uncertainty expectedly lead to heavier losses. 
+Larger jump volatility/uncertainty expectedly lead to larger left tails and therefore heavier losses. 
 
 ## Parameter Sensitivity of the Heston Model
 
