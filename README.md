@@ -62,11 +62,11 @@ $$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
 The Merton jump-diffusion model enhances the GBM framework by incorporating sudden and discontinuous price movements through a Poisson jump process. Asset prices can experience random jumps of varying size and direction. This feature allows the model to capture extreme market events and fat-tailed return distributions that are not explained by the standard Black–Scholes assumptions. As a result, the model provides a more realistic description of tail risk and hedging performance during market shocks. The corresponing SDE has the follwoing form:
 
-$$ dS_t = (r - \lambda k) S_t dt + \sigma S_t dW_t + S_t (J - 1) dN_t $$
+$$ dS_t = (\mu - \lambda k) S_t dt + \sigma S_t dW_t + S_t (J - 1) dN_t $$
 
 Aside from the parameters that also appear in the GBM, the new parameters are $\lambda$ that is the expected number of jumps per year or simply jump rate, $J$ is the jump magnitude, which is typically assumed to be log-normally distributed and can be therefroe written as $e^{N \mu_J + \sqrt{N} \sigma_J Z}$, where $N$ is number of jumps, $\mu_J$ is the mean log-jump size (the directional tendency), $\sigma_J$ is the volatility/uncertainty of the log-jump size and $Z_i$ is a standard normal random variable. $dN_t$ is a Poisson process where $dN = 1$ if a jump occurs and $0$ otherwise. Finally, $k$ represents the expected percentage change in the asset price caused by a single jump and is $E\[ J - 1\]$. Given that, the analytical solution can be derived in a similar manner as for the GBM. 
 
-$$ S_t = S_0 \exp \bigg( (r - \lambda k - 0.5 \sigma^2) t + \sigma W_t \bigg) \prod_{i=1}^N J_i $$
+$$ S_t = S_0 \exp \bigg( (\mu - \lambda k - 0.5 \sigma^2) t + \sigma W_t \bigg) \prod_{i=1}^N J_i $$
 
 ## Heston Model
 
@@ -92,7 +92,7 @@ which is called the Feller condition. This condition ensures that that the volat
 
 Unfortunately, the SDEs has no analytical solution. Nevertheless, a discretized approximation can be derived:
 
-$$ S_{t + \Delta t} = S_t \exp \bigg( (r - 0.5 \nu_t) \Delta t + \sqrt{v_t \Delta t} Z_S \bigg) $$
+$$ S_{t + \Delta t} = S_t \exp \bigg( (\mu - 0.5 \nu_t) \Delta t + \sqrt{v_t \Delta t} Z_S \bigg) $$
 
 $$ \nu_{t + \Delta t} = v_t + \kappa (\theta - \nu_t) \Delta t + \xi \sqrt{\nu_t \Delta t} Z_\nu $$
 
@@ -101,6 +101,8 @@ Where $Z_S$ and $Z_\nu$ are two uncorrelated standard normal random variables, w
 $$ Z_S = Z_1 $$
 
 $$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
+
+Note: for direct comparison with GBM, it's assuemd that both Merton and Heston models have drift $\mu$ = $r$. 
 
 # Methodolgy 
 
