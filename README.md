@@ -137,7 +137,7 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 ## Hedging Frequency 
 
-Number of steps are (10, 25, 50, 100, 252, 500)
+Number of steps are 10, 25, 50, 100, 252, 500.
 
 <img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
 
