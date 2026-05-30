@@ -122,7 +122,7 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 <img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/3c3fd008-67b0-42e4-9d57-8d0b87f11d4a" />
 
-## VaR, ES, skewness and kurtosis
+## PnL mean, PnL std, skewness, kurtosis, VaR and ES
 
 <img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/d4a5eb95-dca0-47a3-8c81-313070582fd7" />
 
