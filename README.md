@@ -8,6 +8,40 @@ Project by Alexsey Chernichenko. May 2026.
 
 ## Delta Hedging
 
+Delta hedging aims to eliminate sensitivity to small changes in the underlying price by constructing a locally risk-free portfolio. A delta-hedged portfolio is formed as:
+
+$$ \Pi = V - \Delta S $$
+
+Using Itô’s lemma, the stochastic term cancels and under continuous rebalancing the portfolio evolves deterministically:
+
+$$ d \Pi = \bigg( \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2}\bigg) dt $$
+
+In the Black–Scholes framework no-arbitrage implies:
+
+$$ d \Pi = r \Pi dt $$
+
+which leads to the Black–Scholes PDE. 
+
+To put it simply, the idea is to offset the option’s exposure to the underlying by taking an opposite position in the stock. Since Delta measures how much the option price moves with the stock, holding $−Δ$ units of the underlying stock cancels the first-order price risk. As the stock price changes, Delta changes as well, so the hedge must be continuously rebalanced. In theory, continuous rebalancing removes all randomness from the portfolio, making it risk-free. In practice, rebalancing is discrete, which introduces hedging error that grows with volatility and lower rebalancing frequency.
+
+In the Black–Scholes framework, the idea is extended since the stock position alone almost never has the same value as the option. However, an option can be replicated by a portfolio consisting of a position in the underlying asset and a risk-free cash account. The idea is reminiscent of the portfolio replication in the binomial model and this isn't a coincidence since the Black-Scholes is its continuous limit. So, at time $t_i$ the value of the replicating portfolio is:
+
+$$ V_{t_i} = \Delta_{t_i} S_{t_i} + B_{t_i} $$
+
+where $V_{t_i}$ is the option value, $S_{t_i}$ is the underlying asset price, $\Delta_{t_i}$ is the option delta and $B_{t_i}$ is the value of the cash account. Between rebalancing dates, the stock position remains unchanged while the cash account accumulates interest at the risk-free rate $r$.
+
+$$ B_{t_{i+1}} = B_{t_i} e^{r (t_{i+1} - t_i)} $$
+
+At the next rebalancing date $t_{i+1}$, the option delta is recalculated and the stock position is adjusted from $\Delta_{t_i}$ to $\Delta_{t_{i+1}}$. The cash account is updated according to
+
+$$ B_{t_{i+1}} = B_{t_i} e^{r (t_{i+1} - t_i)} - (\Delta_{t_{i+1}} - \Delta_{t_i}) S_{i+1} $$
+
+The portfolio value after rebalancing becomes
+
+$$ V_{t_{i+1}} = \Delta_{t_{i+1}} S_{t_{i+1}} + B_{t_{i+1}} $$
+
+Under continuous rebalancing, this replication strategy reproduces the Black–Scholes option value exactly. In practice however rebalancing is performed discretely which leads to replication errors.
+
 ## Geometric Brownian Motion
 
 $$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
