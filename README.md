@@ -88,19 +88,23 @@ which indicates that the two Wiener processes are correlated, and
 
 $$ 2\kappa \theta > \xi^2 $$
 
-which is called the Feller condition. This condition ensures that that the volatiltiy is strictly positive. 
+which is called the Feller condition. This condition ensures that that the volatiltiy $\nu_t$ is strictly positive. 
 
-Unfortunately, the SDEs has no analytical solution. However, for the purposes of the project, discretization 
+Unfortunately, the SDEs has no analytical solution. Nevertheless, a discretized approximation can be derived:
 
 $$ S_{t + \Delta t} = S_t \exp \bigg( (r - 0.5 \nu_t) \Delta t + \sqrt{v_t \Delta t} Z_S \bigg) $$
 
 $$ \nu_{t + \Delta t} = v_t + \kappa (\theta - \nu_t) \Delta t + \xi \sqrt{\nu_t \Delta t} Z_\nu $$
+
+Where $Z_S$ and $Z_\nu$ are two uncorrelated standard normal random variables, which are then linked with the Cholesky decomposition.
 
 $$ Z_S = Z_1 $$
 
 $$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
 
 # Methodolgy 
+
+
 
 # Structure
 
