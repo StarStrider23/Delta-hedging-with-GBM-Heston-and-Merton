@@ -137,27 +137,33 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 ## Hedging Frequency 
 
-Number of steps are 10, 25, 50, 100, 252, 500.
+Number of steps used are 10, 25, 50, 100, 252 and 500.
 
 <img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
 
 ## Parameter Sensitivity of the Merton Model
 
-### Jump intensity ($\lambda$)
+### Jump rate ($\lambda$)
+
+Number of expected jumps per year used are 0.5, 1, 1.5, 2.5 and 4.
 
 <img width="1200" height="600" alt="Figure_11" src="https://github.com/user-attachments/assets/6e037284-00c5-417d-b56b-dc1a5e593b1d" />
 
 <img width="1200" height="600" alt="Figure_12" src="https://github.com/user-attachments/assets/f20e31c3-faed-465a-ab63-1ea46e2f5e9e" />
 
-### Jump size and direction ($\mu_J$)
+### Jump size/direction ($\mu_J$)
 
-<img width="1440" height="800" alt="Figure_13" src="https://github.com/user-attachments/assets/60e52db3-0098-4a3c-ac0b-dd2c80f262f4" />
+Jump sizes/directions used are -0.25, -0.1, -0.05, 0.05, 0.1 and 0.25
+
+<img width="1440" height="800" alt="Figure_18" src="https://github.com/user-attachments/assets/fdce359a-df11-45c3-a60f-cb2f8846a5f6" />
 
 <img width="1200" height="600" alt="Figure_14" src="https://github.com/user-attachments/assets/519b3e4a-563f-4841-a46a-bb05d150ac7e" />
 
 ### Jump volatiltiy/uncertainty ($\nu_J$)
 
-<img width="1440" height="800" alt="Figure_15" src="https://github.com/user-attachments/assets/bece0437-dd13-4589-8876-a7bfb1fefd3b" />
+Jump volatilities/uncertainties used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
+
+<img width="1440" height="800" alt="Figure_19" src="https://github.com/user-attachments/assets/10232af5-5706-40df-acbb-680f871171c4" />
 
 <img width="1200" height="600" alt="Figure_16" src="https://github.com/user-attachments/assets/7f21c5af-ed7c-466f-ac87-b373296f6e27" />
 
@@ -165,17 +171,23 @@ Number of steps are 10, 25, 50, 100, 252, 500.
 
 ### Vol-of-vol ($\xi$)
 
+Vol-of-vol used are 0.1, 0.2, 0.3, 0.4 and 0.5.
+
 <img width="1200" height="600" alt="Figure_5" src="https://github.com/user-attachments/assets/f54fa2f8-b9a3-4117-8479-36f0b317d170" />
 
 <img width="1200" height="600" alt="Figure_6" src="https://github.com/user-attachments/assets/458af505-283e-44e4-9e7e-a16d0423f644" />
 
 ### Correlaton ($\rho$)
 
+Correlations used are 0.5, 0.1, -0.4, -0.7, -0.9 and -0.99.
+
+<img width="1440" height="800" alt="Figure_17" src="https://github.com/user-attachments/assets/ce84d0ba-fb56-44fd-9fc8-24cf68fbee95" />
+
 <img width="1200" height="600" alt="Figure_8" src="https://github.com/user-attachments/assets/71047ed7-146a-4eee-b8bd-b9399fd6e6ae" />
 
-<img width="1440" height="800" alt="Figure_7" src="https://github.com/user-attachments/assets/ffb040d5-6356-4dba-b86c-635613d9abb8" />
-
 ### Rate of Reversion ($\kappa$)
+
+Rates of reversion used are 1.2, 1.5, 2.5, 3.5 and 4.0.
 
 <img width="1200" height="600" alt="Figure_9" src="https://github.com/user-attachments/assets/8107f20e-0b89-4024-8a0c-06cf7a3d0810" />
 
