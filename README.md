@@ -141,16 +141,6 @@ Number of steps are (10, 25, 50, 100, 252, 500)
 | VaR99    | -1.16   |   -9.38    |   -5.03    |
 | ES99     | -1.47   |   -11.77   |   -6.25    |
 
-GBM. PnL mean is 0.0015359541743981235, PnL std is 0.43742186672487227
-Heston. PnL mean is 0.16351475031827176, PnL std is 1.7651456833501005
-Merton. PnL mean is -1.072671804744826, PnL std is 2.040162088858694
-GBM. Skewness: -0.14907529006238934, kurtosis: 1.622698040279852
-Heston. Skewness: -0.6854703545605113, kurtosis: 1.5592454338242643
-Merton. Skewness: -2.925552917582452, kurtosis: 12.689569191517394
-GBM. VaR99: -1.1639508122937987, ES99: -1.4672368779223461
-Heston. VaR99: -5.0289679172380515, ES99: -6.254811478116869
-Merton. VaR99: -9.38328234932081, ES99: -11.770283948728027
-
 ## Parameter Sensitivity of the Merton Model
 
 ### Jump intensity ($\lambda$)
