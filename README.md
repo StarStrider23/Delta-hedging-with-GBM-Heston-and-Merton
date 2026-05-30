@@ -46,9 +46,13 @@ Under continuous rebalancing, this replication strategy reproduces the Black–S
 
 ## Geometric Brownian Motion
 
+The Geometric Brownian Motion is a continuous-time stochastic process that assumes that asset prices evolve continuously with a constant drift and constant volatility. 
+
 $$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
 
 $$ S_t = S_0 \exp \bigg( (\mu - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
+
+The model is the foundation of the Black–Scholes framework. When the no-arbitrage principle is applied, the expected growth rate of any asset's price in a risk-neutral world must equal the risk-free rate. Therefore, in the Black-Scholes framework, the GBM has drift $\mu = r$.
 
 $$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
