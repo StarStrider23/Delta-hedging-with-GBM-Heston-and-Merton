@@ -96,13 +96,13 @@ $$ S_{t + \Delta t} = S_t \exp \bigg( (\mu - 0.5 \nu_t) \Delta t + \sqrt{v_t \D
 
 $$ \nu_{t + \Delta t} = v_t + \kappa (\theta - \nu_t) \Delta t + \xi \sqrt{\nu_t \Delta t} Z_\nu $$
 
-Where $Z_S$ and $Z_\nu$ are two uncorrelated standard normal random variables, which are then linked with the Cholesky decomposition.
+Where $Z_S$ and $Z_\nu$ are two standard normal random variables, which are linked by the Cholesky decomposition.
 
 $$ Z_S = Z_1 $$
 
 $$ Z_\nu = \rho Z_1 + \sqrt{1 - \rho^2} Z_2 $$
 
-Note: for direct comparison with GBM, it's assuemd that both Merton and Heston models have drift $\mu$ = $r$. 
+Note: for direct comparison with GBM, it's assumed that both Merton and Heston models have drift $\mu$ = $r$. 
 
 # Methodolgy 
 
