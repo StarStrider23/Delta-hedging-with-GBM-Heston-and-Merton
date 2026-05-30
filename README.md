@@ -70,19 +70,31 @@ $$ S_t = S_0 \exp \bigg( (r - \lambda k - 0.5 \sigma^2) t + \sigma W_t \bigg) \p
 
 ## Heston Model
 
-The Heston model extends the GBM framework by introducing stochastic volatility. Instead of assuming a constant volatility, the variance follows its own mean-reverting stochastic process. This allows the model to capture important market phenomena such as volatility clustering and the volatility smile observed in option markets. The correlation between asset returns and volatility changes provides additional flexibility and enables a more realistic representation of market dynamics.
+The Heston model adds some complexity and extends the GBM framework by introducing stochastic volatility. Instead of assuming a constant volatility, the variance follows its own mean-reverting stochastic process. This allows the model to capture important market phenomena such as volatility clustering and the volatility smile observed in option markets. Overall, the model provides a more realistic reperesenation of market dynamics. 
+
+The model is therefore fully described by two SDEs - one for the asset price $S_t$ and the other one for its $\nu_t$.
 
 $$ dS_t = \mu S_{t} dt + \sqrt{\nu_t} S_t dW_t^S $$
 
 $$ d\nu_t = \kappa (\theta - \nu_t) dt + \xi \sqrt{\nu_t} dW_t^\nu $$
 
+Where $dW_t^S$ and $dW_t^\nu$ are the Wiener processes\Brownian Motions for the asset price $S_t$ and volatility $\nu_t$ respectively. $\kappa$ is the rate at which νt reverts to $\theta$, which in its turn is the long variance or long-run average variance of the price (as $t$ tends to infinity, the expected value of $\nu_t$ tends to $\theta$). Finally, $\rho$ is the correlation between $dW_t^S$ and $dW_t^\nu$, and $\xi$ is the volatility of the volatility (vol-of-vol). The existence of $\xi$ is of course explained by the fact that volatility itself becomes a stochastic process.
+
+Besides the SDEs above, there are two important conditions:
+
 $$ W_t^S W_t^\nu = \rho dt $$
+
+which indicates that the two Wiener processes are correlated, and
 
 $$ 2\kappa \theta > \xi^2 $$
 
-$$ S_{t + dt} = S_t \exp \bigg( (r - 0.5 \nu_t) dt + \sqrt{v_t dt} Z_S \bigg) $$
+which is called the Feller condition. This condition ensures that that the volatiltiy is strictly positive. 
 
-$$ \nu_{t + dt} = v_t + \kappa (\theta - \nu_t) dt + \xi \sqrt{\nu_t dt} Z_\nu $$
+Unfortunately, the SDEs has no analytical solution. However, for the purposes of the project, discretization 
+
+$$ S_{t + \Delta t} = S_t \exp \bigg( (r - 0.5 \nu_t) \Delta t + \sqrt{v_t \Delta t} Z_S \bigg) $$
+
+$$ \nu_{t + \Delta t} = v_t + \kappa (\theta - \nu_t) \Delta t + \xi \sqrt{\nu_t \Delta t} Z_\nu $$
 
 $$ Z_S = Z_1 $$
 
