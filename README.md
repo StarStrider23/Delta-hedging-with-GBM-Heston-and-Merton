@@ -169,6 +169,8 @@ Jump sizes/directions used are -0.25, -0.1, -0.05, 0.05, 0.1 and 0.25
 
 <img width="1200" height="600" alt="Figure_14" src="https://github.com/user-attachments/assets/519b3e4a-563f-4841-a46a-bb05d150ac7e" />
 
+Larger average jump magnitudes increase hedging risk regardless of direction and naturally result in more negative VaR and Expected Shortfall values.
+
 ### Jump volatiltiy/uncertainty ($\nu_J$)
 
 Jump volatilities/uncertainties used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
@@ -176,6 +178,8 @@ Jump volatilities/uncertainties used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
 <img width="1440" height="800" alt="Figure_19" src="https://github.com/user-attachments/assets/10232af5-5706-40df-acbb-680f871171c4" />
 
 <img width="1200" height="600" alt="Figure_16" src="https://github.com/user-attachments/assets/7f21c5af-ed7c-466f-ac87-b373296f6e27" />
+
+Larger jump volatility/uncertainty expectedly lead to heavier losses. 
 
 ## Parameter Sensitivity of the Heston Model
 
