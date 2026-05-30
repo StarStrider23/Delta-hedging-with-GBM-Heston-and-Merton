@@ -110,7 +110,7 @@ Asset price paths were simulated using Monte Carlo methods under three different
 
 Hedging performance was evaluated by analyzing the resulting PnL distributions, including measures such as rolling mean PnL, standard deviation, VaR ES. The impact of hedging frequency on replication accuracy was investigated and parameter sensitivity analyses were performed to assess how key model parameters influence hedging risk and performance.
 
-The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 0.035, $\sigma$ = 0.2, $T$ = 1, number of steps = 252 and number of simulations = 100000. For the Merton model: $\lambda$ = 1, $mu_J$ = - 0.05 and $\sigma_J$ = 0.1. Finally, for the Heston model: $\nu_0$ = 0.04, $\rho$ = -0.7, $xi$ = 0.3, $\theta$ = 0.04 and $\kappa$ = 1.5. 
+The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 0.035, $\sigma$ = 0.2, $T$ = 1, number of steps = 252 and number of simulations = 10000. For the Merton model: $\lambda$ = 1, $mu_J$ = - 0.05 and $\sigma_J$ = 0.1. Finally, for the Heston model: $\nu_0$ = 0.04, $\rho$ = -0.7, $xi$ = 0.3, $\theta$ = 0.04 and $\kappa$ = 1.5. 
 
 # Structure
 
