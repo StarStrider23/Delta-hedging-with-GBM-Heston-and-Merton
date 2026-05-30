@@ -54,7 +54,7 @@ Where $S_t$ is the asset price at time $t$, $\mu$ is the drift, $\sigma$ is the 
 
 $$ S_t = S_0 \exp \bigg( (\mu - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
-The model is the foundation of the Black–Scholes framework. When the no-arbitrage principle is applied, the expected growth rate of any asset's price in a risk-neutral world must equal the risk-free rate $r$. Therefore, in the Black-Scholes framework, the GBM has drift $\mu = r$.
+The model is the foundation of the Black–Scholes framework. When the no-arbitrage principle is applied, the expected growth rate of any asset's price in a risk-neutral world must equal the risk-free rate $r$. Therefore, in the Black-Scholes world, the GBM has drift $\mu = r$.
 
 $$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
