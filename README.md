@@ -46,23 +46,31 @@ Under continuous rebalancing, this replication strategy reproduces the Black–S
 
 ## Geometric Brownian Motion
 
-The Geometric Brownian Motion is a continuous-time stochastic process that assumes that asset prices evolve continuously with a constant drift and constant volatility. 
+The Geometric Brownian Motion is a continuous-time stochastic process that assumes that asset prices evolve continuously with a constant drift and constant volatility. The corresponding stochastic differnetial equation (SDE) is
 
 $$ dS_t = \mu S_t dt + \sigma S_t dW_t $$
 
+Where $S_t$ is the asset price at time $t$, $\mu$ is the drift, $\sigma$ is the volatiltiy and $dW_t$ is the Wiener process/Brownian Motion. This SDE has the following analytic solution:
+
 $$ S_t = S_0 \exp \bigg( (\mu - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
-The model is the foundation of the Black–Scholes framework. When the no-arbitrage principle is applied, the expected growth rate of any asset's price in a risk-neutral world must equal the risk-free rate. Therefore, in the Black-Scholes framework, the GBM has drift $\mu = r$.
+The model is the foundation of the Black–Scholes framework. When the no-arbitrage principle is applied, the expected growth rate of any asset's price in a risk-neutral world must equal the risk-free rate $r$. Therefore, in the Black-Scholes framework, the GBM has drift $\mu = r$.
 
 $$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
 ## Merton Model
 
+The Merton jump-diffusion model enhances the GBM framework by incorporating sudden and discontinuous price movements through a Poisson jump process. Asset prices can experience random jumps of varying size and direction. This feature allows the model to capture extreme market events and fat-tailed return distributions that are not explained by the standard Black–Scholes assumptions. As a result, the model provides a more realistic description of tail risk and hedging performance during market shocks. The corresponing SDE has the follwoing form:
+
 $$ dS_t = (r - \lambda k) S_t dt + \sigma S_t dW_t + S_t (J - 1) dN_t $$
+
+Aside from the parameters that also appear in the GBM, the new parameters are $\lambda$ that is the expected number of jumps per year or simply jump rate, $J$ is the jump magnitude, which is typically assumed to be log-normally distributed and can be therefroe written as $e^{N \mu_J + \sqrt{N} \sigma_J Z}$, where $N$ is number of jumps, $\mu_J$ is the mean log-jump size (the directional tendency), $\sigma_J$ is the volatility/uncertainty of the log-jump size and $Z_i$ is a standard normal random variable. $dN_t$ is a Poisson process where $dN = 1$ if a jump occurs and $0$ otherwise. Finally, $k$ represents the expected percentage change in the asset price caused by a single jump and is $E\[ J - 1\]$. Given that, the analytical solution can be derived in a similar manner as for the GBM. 
 
 $$ S_t = S_0 \exp \bigg( (r - \lambda k - 0.5 \sigma^2) t + \sigma W_t \bigg) \prod_{i=1}^N J_i $$
 
 ## Heston Model
+
+The Heston model extends the GBM framework by introducing stochastic volatility. Instead of assuming a constant volatility, the variance follows its own mean-reverting stochastic process. This allows the model to capture important market phenomena such as volatility clustering and the volatility smile observed in option markets. The correlation between asset returns and volatility changes provides additional flexibility and enables a more realistic representation of market dynamics.
 
 $$ dS_t = \mu S_{t} dt + \sqrt{\nu_t} S_t dW_t^S $$
 
