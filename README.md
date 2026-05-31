@@ -217,6 +217,12 @@ As rate of reversion increases, both standard deviation/volatility and risk meas
 
 # Discussion
 
-Jumps seem to affect hedging degree to a bigger extent compared to stochastic volatility
+The results clearly demonstrate and confirm that the effectiveness of delta hedging depends strongly on the assumptions made about the underlying asset dynamics. Under the GBM model with the Black–Scholes assumptions hedging errors remain small and the mean PnL stays close to zero. Together with the demonstration of how hedging error decreases as the rebalancing frequency increases, this confirms that discrete delta hedging can successfully replicate option payoffs when asset prices follow a continuous process with constant volatility.
 
-This demonstrates the growing impact of stochastic volatility and jump risk on hedging performance.
+Introducing stochastic volatility through the Heston model leads to larger hedging errors, wider PnL distributions and increased tail risk. Although delta hedging remains reasonably effective the results show that volatility risk cannot be fully eliminated when volatility evolves randomly over time. The sensitivity analysis further confirms that parameters governing volatility dynamics, such as mean reversion $\kappa$, volatility of volatility $\xi$ and correlation $\rho$, have a significant impact on hedging performance. 
+
+The largest hedging losses are observed under the Merton jump-diffusion model. The presence of jumps produces asymmetric and strongly negatively skewed PnL distributions, high kurtosis and VaR and Expected Shortfall values which are substantially worse than the others. Unlike stochastic volatility, jump risks cannot be fully mitigated through more frequent rebalancing. This is because sudden price jumps are discontinuous and hence violate the assumptions underlying delta hedging. Parameter sensitivity analysis confirms that increasing jump frequency or jump magnitude leads to a significant deterioration in hedging performance.
+
+Overall, the results highlight that while Black–Scholes delta hedging performs well under idealized assumptions, stochastic volatility and jump risk introduce substantial residual risk. These observations emphasize the importance of accounting for realistic market dynamics when assessing hedging strategies and managing option portfolios.
+
+As a final comment, it should be noted that the quantitative results depend on the specific parameter values chosen for the Heston and Merton models. For instance, while the Merton model did consistently produce larger hedging errors than the Heston model, the difference was relatively small and could change under different values. Since there is no universally accepted set of parameter values for either model the comparison should be interpreted as illustrative. 
