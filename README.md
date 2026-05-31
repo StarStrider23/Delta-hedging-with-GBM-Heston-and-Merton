@@ -118,7 +118,7 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 ## Rolling Mean
 
-Under the GBM model, the rolling mean PnL remains close to zero signaling effective hedging when the model assumptions are satisfied. The Heston model exhibits a gradually increasing positive mean PnL while the Merton model shows a rapidly decreasing negative mean PnL. This demonstrates the growing impact of stochastic volatility and jump risk on hedging performance.
+Under the GBM model, the rolling mean PnL remains close to zero signaling effective hedging when the model assumptions are satisfied. The Heston model exhibits a gradually increasing positive mean PnL while the Merton model shows a rapidly decreasing negative mean PnL.
 
 <img width="1200" height="600" alt="Figure_1" src="https://github.com/user-attachments/assets/c4148df2-1bc8-4a8c-ba74-d4ce94e2b299" />
 
@@ -147,7 +147,7 @@ Number of steps used are 10, 25, 50, 100, 252 and 500.
 
 <img width="1200" height="600" alt="Figure_4" src="https://github.com/user-attachments/assets/2e21664a-0e30-4a1f-bf46-dc7b6c6b42c6" />
 
-For every model, hedging error decreases as the rebalancing frequency increases. However, the error approaches zero in the limit of continuous hedging only for GBM while it approaches different, non-zero limits for the Heston and Merton models. Jumps seem to affect hedging degree to a bigger extent compared to stochastic volatility. 
+For every model, hedging error decreases as the rebalancing frequency increases. However, the error approaches zero in the limit of continuous hedging only for GBM while it approaches different, non-zero limits for the Heston and Merton models. 
 
 ## Parameter Sensitivity of the Merton Model
 
@@ -169,7 +169,7 @@ Jump sizes/directions used are -0.25, -0.1, -0.05, 0.05, 0.1 and 0.25
 
 <img width="1200" height="600" alt="Figure_14" src="https://github.com/user-attachments/assets/519b3e4a-563f-4841-a46a-bb05d150ac7e" />
 
-Larger average jump magnitudes increase hedging risk regardless of direction and naturally result in more negative VaR and Expected Shortfall values.
+Larger average jump magnitudes increase hedging risk regardless of direction, lead to heavier left tails and naturally result in more negative VaR and ES values.
 
 ### Jump volatiltiy/uncertainty ($\nu_J$)
 
@@ -191,6 +191,8 @@ Vol-of-vol used are 0.1, 0.2, 0.3, 0.4 and 0.5.
 
 <img width="1200" height="600" alt="Figure_6" src="https://github.com/user-attachments/assets/458af505-283e-44e4-9e7e-a16d0423f644" />
 
+Larger vol-of-vol values naturally lead to larger standard deviation/volatility and also to more negative VaR and ES values.
+
 ### Correlaton ($\rho$)
 
 Correlations used are 0.9, 0.6, 0.3, -0.3, -0.6 and -0.9.
@@ -199,12 +201,20 @@ Correlations used are 0.9, 0.6, 0.3, -0.3, -0.6 and -0.9.
 
 <img width="1200" height="600" alt="Figure_21" src="https://github.com/user-attachments/assets/233575d3-c9d8-48a2-a91c-8d86b21261fe" />
 
+The relationship between correlation and hedging risk is approximately symmetric - VaR and Expected Shortfall seem to have their minima for values that are closer to 0. Both risk measures improve as the correlation approaches $\pm$ 1. In addition, kurtosis increases and skewness becomes more negative near zero correlation.
+
 ### Rate of Reversion ($\kappa$)
 
-Rates of reversion used are 1.2, 1.5, 2.5, 3.5 and 4.0.
+Rates of reversion used are 1.2, 1.5, 2.5, 3.5 and 4.0. 
 
 <img width="1200" height="600" alt="Figure_9" src="https://github.com/user-attachments/assets/8107f20e-0b89-4024-8a0c-06cf7a3d0810" />
 
-<img width="1200" height="600" alt="Figure_10" src="https://github.com/user-attachments/assets/b7eafcfe-bcd9-4533-877a-886b57800dbc" />
+<img width="1200" height="600" alt="Figure_23" src="https://github.com/user-attachments/assets/500419a9-d2b6-4b4d-9b26-e6688654440e" />
+
+As rate of reversion increases, both standard deviation/volatility and risk measures tend to 0. 
 
 # Discussion
+
+Jumps seem to affect hedging degree to a bigger extent compared to stochastic volatility
+
+This demonstrates the growing impact of stochastic volatility and jump risk on hedging performance.
