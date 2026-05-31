@@ -215,7 +215,7 @@ Rate of reversion values used are 1.2, 1.5, 2.5, 3.5 and 4.0. These values satis
 
 <img width="1200" height="600" alt="Figure_23" src="https://github.com/user-attachments/assets/500419a9-d2b6-4b4d-9b26-e6688654440e" />
 
-As rate of reversion increases, both standard deviation/volatility and risk measures tend to 0. 
+As rate of reversion increases, both standard deviation/volatility and risk measures tend to reduce. 
 
 # Discussion
 
