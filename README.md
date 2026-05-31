@@ -116,6 +116,8 @@ The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 
 
 # Structure
 
+The models folder contains the implemented class for Black-Scholes model, the delta_hedging function and the files with the 3 models (GBM, Merton and Heston). The main.py ties everything together - it contains all the results and parameter sensitivity analyses.
+
 # Results
 
 ## Rolling Mean
