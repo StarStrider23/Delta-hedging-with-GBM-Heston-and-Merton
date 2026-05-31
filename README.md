@@ -74,7 +74,7 @@ $$ S_t = S_0 \exp \bigg( (\mu - \lambda k - 0.5 \sigma^2) t + \sigma W_t \bigg) 
 
 The Heston model adds some complexity and extends the GBM framework by introducing stochastic volatility. Instead of assuming a constant volatility, the variance follows its own mean-reverting stochastic process. This allows the model to capture important market phenomena such as volatility clustering and the volatility smile observed in option markets. Overall, the model provides a more realistic reperesenation of market dynamics. 
 
-The model is therefore fully described by two SDEs - one for the asset price $S_t$ and the other one for its $\nu_t$.
+The model is therefore fully described by two SDEs - one for the asset price $S_t$ and the other one for its volatility $\nu_t$.
 
 $$ dS_t = \mu S_{t} dt + \sqrt{\nu_t} S_t dW_t^S $$
 
