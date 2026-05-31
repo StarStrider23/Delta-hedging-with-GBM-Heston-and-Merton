@@ -112,7 +112,7 @@ Asset price paths were simulated using Monte Carlo methods under three different
 
 Hedging performance was evaluated by analyzing the resulting PnL distributions, including measures such as rolling mean PnL, standard deviation, VaR and ES, both at the 99th percentile. The impact of hedging frequency on replication accuracy was investigated and parameter sensitivity analyses were performed to assess how key model parameters influence hedging risk and performance.
 
-The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 0.035, $\sigma$ = 0.2, $T$ = 1, number of steps = 252 and number of simulations = 10000. For the Merton model: $\lambda$ = 1, $mu_J$ = - 0.05 and $\sigma_J$ = 0.1. Finally, for the Heston model: $\nu_0$ = 0.04, $\rho$ = -0.7, $xi$ = 0.3, $\theta$ = 0.04 and $\kappa$ = 1.5. 
+The standard values that were used for the GBM were $S$ = 100, $K$ = 100, $r$ = 0.035, $\sigma$ = 0.2, $T$ = 1, number of steps = 252 and number of simulations = 10000. For the Merton model: $\lambda$ = 1, $mu_J$ = - 0.05 and $\sigma_J$ = 0.1. Finally, for the Heston model: $\nu_0$ = 0.04, $\rho$ = -0.7, $xi$ = 0.3, $\theta$ = 0.04 and $\kappa$ = 1.5.
 
 # Structure
 
@@ -165,7 +165,7 @@ Number of expected jumps per year expectedly lead to a higher standard deviation
 
 ### Jump size/direction ($\mu_J$)
 
-Jump sizes/directions used are -0.25, -0.1, -0.05, 0.05, 0.1 and 0.25
+Jump size/direction values used are -0.25, -0.1, -0.05, 0.05, 0.1 and 0.25
 
 <img width="1440" height="800" alt="Figure_18" src="https://github.com/user-attachments/assets/fdce359a-df11-45c3-a60f-cb2f8846a5f6" />
 
@@ -175,7 +175,7 @@ Larger average jump magnitudes increase hedging risk regardless of direction, le
 
 ### Jump volatiltiy/uncertainty ($\nu_J$)
 
-Jump volatilities/uncertainties used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
+Jump volatility/uncertainty values used are 0.01, 0.05, 0.1, 0.15, 0.25 and 0.4
 
 <img width="1440" height="800" alt="Figure_19" src="https://github.com/user-attachments/assets/10232af5-5706-40df-acbb-680f871171c4" />
 
@@ -187,7 +187,7 @@ Larger jump volatility/uncertainty expectedly lead to larger left tails and ther
 
 ### Vol-of-vol ($\xi$)
 
-Vol-of-vol used are 0.1, 0.2, 0.3, 0.4 and 0.5.
+Vol-of-vol values used are 0.1, 0.2, 0.3, 0.4 and 0.5. These values satisfy the Feller condition with $\theta$ = 0.04 and $\kappa$ = 1.5.
 
 <img width="1200" height="600" alt="Figure_5" src="https://github.com/user-attachments/assets/f54fa2f8-b9a3-4117-8479-36f0b317d170" />
 
@@ -197,7 +197,7 @@ Larger vol-of-vol values naturally lead to larger standard deviation/volatility 
 
 ### Correlaton ($\rho$)
 
-Correlations used are 0.9, 0.6, 0.3, -0.3, -0.6 and -0.9.
+Correlation values used are 0.9, 0.6, 0.3, -0.3, -0.6 and -0.9.
 
 <img width="1440" height="800" alt="Figure_20" src="https://github.com/user-attachments/assets/f61bd25a-cbcf-4f3d-bec5-86c6aa34189f" />
 
@@ -207,7 +207,7 @@ The relationship between correlation and hedging risk is approximately symmetric
 
 ### Rate of Reversion ($\kappa$)
 
-Rates of reversion used are 1.2, 1.5, 2.5, 3.5 and 4.0. 
+Rate of reversion values used are 1.2, 1.5, 2.5, 3.5 and 4.0. These values satisfy the Feller condition with $\theta$ = 0.04 and $\xi$ = 0.3.
 
 <img width="1200" height="600" alt="Figure_9" src="https://github.com/user-attachments/assets/8107f20e-0b89-4024-8a0c-06cf7a3d0810" />
 
