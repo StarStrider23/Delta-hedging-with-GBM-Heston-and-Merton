@@ -4,7 +4,7 @@ Project by Alexsey Chernichenko. May 2026.
 
 # Project Goal 
 
-The goal of this project is to evaluate performance of delta hedging under different asset price dynamics. Using Monte Carlo simulation delta hedging strategy is implemented and compared for different models: the Geometric Brownian Motion (GBM), Heston stochastic volatility and Merton jump diffusion models. Hedging effectiveness is then assessed through the analysis of profit and loss (PnL), Value-at-Risk (VaR) and Expected Shortfall (ES). Additionally, parameter sensitivity analysis is performed for the Heston and Merton models. The project aims to quantify how stochastic volatility, jumps and hedging frequency distort hedging accuracy and residual risk.
+The goal of this project is to evaluate performance of delta hedging under different asset price dynamics. Using Monte Carlo simulation delta hedging strategy is implemented and compared for different models: the Geometric Brownian Motion (GBM), Heston stochastic volatility and Merton jump diffusion models. Hedging effectiveness is then assessed through the analysis of profit and loss (PnL), Value-at-Risk (VaR) and Expected Shortfall (ES). Additionally, parameter sensitivity analysis is performed for the Heston and Merton models. The project aims to visualize how stochastic volatility, jumps and hedging frequency distort hedging accuracy and residual risk.
 
 # Background
 
