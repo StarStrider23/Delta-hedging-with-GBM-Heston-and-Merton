@@ -130,7 +130,7 @@ A closer look at the GBM's performance.
 
 <img width="1200" height="600" alt="Figure_2" src="https://github.com/user-attachments/assets/3c3fd008-67b0-42e4-9d57-8d0b87f11d4a" />
 
-## PnL mean, PnL std, skewness, kurtosis, VaR and ES
+## PnL mean, std, skewness, kurtosis, VaR and ES
 
 <img width="1200" height="600" alt="Figure_3" src="https://github.com/user-attachments/assets/ce501363-5d34-44c6-81a0-6ad966287a04" />
 
