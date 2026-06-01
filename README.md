@@ -62,7 +62,7 @@ $$ S_t = S_0 \exp \bigg( (r - 0.5 \sigma^2) t + \sigma W_t \bigg) $$
 
 ## Merton Model
 
-The Merton jump-diffusion model enhances the GBM framework by incorporating sudden and discontinuous price movements through a Poisson jump process. Asset prices can experience random jumps of varying size and direction. This feature allows the model to capture extreme market events and fat-tailed return distributions that are not explained by the standard Black–Scholes assumptions. As a result, the model provides a more realistic description of tail risk and hedging performance during market shocks. The corresponing SDE has the follwoing form:
+The Merton jump-diffusion model enhances the GBM framework by incorporating sudden and discontinuous price movements through a Poisson jump process. Asset prices can experience random jumps of varying size and direction. This feature allows the model to capture extreme market events and fat-tailed return distributions that are not explained by the standard Black–Scholes assumptions. As a result, the model provides a more realistic description of tail risk and hedging performance during market shocks. The corresponing SDE has the following form:
 
 $$ dS_t = (\mu - \lambda k) S_t dt + \sigma S_t dW_t + S_t (J - 1) dN_t $$
 
@@ -80,7 +80,7 @@ $$ dS_t = \mu S_{t} dt + \sqrt{\nu_t} S_t dW_t^S $$
 
 $$ d\nu_t = \kappa (\theta - \nu_t) dt + \xi \sqrt{\nu_t} dW_t^\nu $$
 
-Where $dW_t^S$ and $dW_t^\nu$ are the Wiener processes\Brownian Motions for the asset price $S_t$ and volatility $\nu_t$ respectively. $\kappa$ is the rate at which $\nu_t$ reverts to $\theta$, which in its turn is the long variance or long-run average variance of the price (as $t$ tends to infinity, the expected value of $\nu_t$ tends to $\theta$). Finally, $\rho$ is the correlation between $dW_t^S$ and $dW_t^\nu$, and $\xi$ is the volatility of the volatility (vol-of-vol). The existence of $\xi$ is of course explained by the fact that volatility itself becomes a stochastic process.
+Where $dW_t^S$ and $dW_t^\nu$ are the Wiener processes\Brownian Motions for the asset price $S_t$ and volatility $\nu_t$ respectively. $\kappa$ is the rate at which $\nu_t$ reverts to $\theta$, which in its turn is the long variance or long-run average variance of the price (as $t$ tends to infinity, the expected value of $\nu_t$ tends to $\theta$). Finally, $\rho$ is the correlation between $dW_t^S$ and $dW_t^\nu$, and $\xi$ is the volatility of the volatility (vol-of-vol). The existence of $\xi$ is of course explained by the fact that volatility itself becomes a stochastic process within this framwork.
 
 Besides the SDEs above, there are two important conditions:
 
