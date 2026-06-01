@@ -22,7 +22,7 @@ In the Black–Scholes framework no-arbitrage implies:
 
 $$ d \Pi = r \Pi dt $$
 
-which leads to the Black–Scholes PDE. 
+This leads to the Black–Scholes PDE. 
 
 $$ \frac{\partial V}{\partial t} + \frac{1}{2} \sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + r S \frac{\partial V}{\partial S} - rV = 0 $$
 
