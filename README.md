@@ -1,4 +1,4 @@
-# Delta hedging with GBM, Heston and Merton Models
+d# Delta hedging with GBM, Heston and Merton Model
 
 Project by Alexsey Chernichenko. May 2026.
 
@@ -143,7 +143,7 @@ A closer look at the GBM's performance.
 | VaR99    | -1.16   |   -9.38    |   -5.03    |
 | ES99     | -1.47   |   -11.77   |   -6.25    |
 
-The GBM model yields the narrowest PnL distribution, (almost) the lowest parameters and risk measures. Introducing stochastic volatility through the Heston model greatly increases almost every parameter and risk measure. The Merton model continues this trend and produces the most downside risk with strongly negative skewness, higher kurtosis and substantially worse VaR and Expected Shortfall values due to hedging losses induced by jumps.
+The GBM model yields the narrowest PnL distribution, (almost) the lowest(=closest to 0) parameters and risk measures. Introducing stochastic volatility through the Heston model greatly increases almost every parameter and risk measure. The Merton model continues this trend and produces the most downside risk with strongly negative skewness, higher kurtosis and substantially worse VaR and Expected Shortfall values due to hedging losses induced by jumps.
 
 ## Hedging Frequency 
 
