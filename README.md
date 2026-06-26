@@ -84,7 +84,7 @@ Where $dW_t^S$ and $dW_t^\nu$ are the Wiener processes\Brownian Motions for the 
 
 Besides the SDEs above, there are two important conditions:
 
-$$ W_t^S W_t^\nu = \rho dt $$
+$$ dW_t^S dW_t^\nu = \rho dt $$
 
 which indicates that the two Wiener processes are correlated, and
 
