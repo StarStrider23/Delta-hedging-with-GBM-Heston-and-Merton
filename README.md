@@ -1,4 +1,4 @@
-# Delta hedging under GBM, Heston and Merton Model
+# Delta Hedging Under GBM, Heston and Merton Models
 
 Project by Alexsey Chernichenko. May 2026.
 
